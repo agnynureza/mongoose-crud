@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/books',books)
-// app.use('/customers',customers)
-// app.use('/transaction',transaction)
+app.use('/customers',customers)
+app.use('/transactions',transaction)
 
 const dburl = 'mongodb://localhost:27017/library'
 
